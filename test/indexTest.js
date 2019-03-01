@@ -21,7 +21,7 @@ describe('boardMembers', function() {
     it('returns "No, I must disagree"', function() {
       expect(polishedBoardMember.veto()).to.equal("No, I must disagree")
       expect(backSlappingGene.veto()).to.equal("No, I must disagree")
-      expect(backSlappingGene.veto).to.equal(polishedBoardMember.veto)
+      expect(backSlappingGene.veto.toString()).to.equal(polishedBoardMember.veto.toString())
     })
   })
 
@@ -29,7 +29,7 @@ describe('boardMembers', function() {
     it('returns "You can do that!"', function() {
       expect(polishedBoardMember.approve()).to.equal("You can do that!")
       expect(backSlappingGene.approve()).to.equal("You can do that!")
-      expect(backSlappingGene.approve).to.equal(polishedBoardMember.approve)
+      expect(backSlappingGene.approve.toString()).to.equal(polishedBoardMember.approve.toString())
     })
   })
 
@@ -37,7 +37,7 @@ describe('boardMembers', function() {
     it('returns "I like to help people."', function() {
       expect(polishedBoardMember.doCharity()).to.equal("I like to help people.")
       expect(backSlappingGene.doCharity()).to.equal("I like to help people.")
-      expect(backSlappingGene.doCharity).to.equal(polishedBoardMember.doCharity)
+      expect(backSlappingGene.doCharity.toString()).to.equal(polishedBoardMember.doCharity.toString())
     })
   })
 
@@ -45,7 +45,7 @@ describe('boardMembers', function() {
     it('returns "You will see great things from Scuber."', function() {
       expect(polishedBoardMember.releasePressStatement()).to.equal("You will see great things from Scuber.")
       expect(backSlappingGene.releasePressStatement()).to.equal("You will see great things from Scuber.")
-      expect(backSlappingGene.releasePressStatement).to.equal(polishedBoardMember.releasePressStatement)
+      expect(backSlappingGene.releasePressStatement.toString()).to.equal(polishedBoardMember.releasePressStatement.toString())
     })
   })
 
@@ -53,7 +53,7 @@ describe('boardMembers', function() {
     it('returns "Hi, my name is <name>. I am from <homestate>, and I was trained in <training>."', function() {
       expect(polishedBoardMember.sayHi()).to.equal("Hi, my name is Mr. Polished. I am from New York, and I was trained in law.")
       expect(backSlappingGene.sayHi()).to.equal("Hi, my name is Mr. Gene. I am from Delaware, and I was trained in business.")
-      expect(backSlappingGene.sayHi).to.equal(polishedBoardMember.sayHi)
+      expect(backSlappingGene.sayHi.toString()).to.equal(polishedBoardMember.sayHi.toString())
     })
   })
 })
